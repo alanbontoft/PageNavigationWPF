@@ -10,7 +10,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:vm="clr-namespace:Page_Navigation_App.ViewModel"
-        xmlns:Menu="clr-namespace:Page_Navigation_App.Utilities"
+        xmlns:utils="clr-namespace:Page_Navigation_App.Utilities"
         mc:Ignorable="d"
         Title="MainWindow"
         Height="600"
@@ -53,7 +53,7 @@
 
                     <!--// Home //-->
 
-                    <Menu:Btn Style="{StaticResource BtnStyle}"
+                    <utils:Btn Style="{StaticResource BtnStyle}"
                               Command="{Binding HomeCommand}"
                               IsChecked="True">
 
@@ -67,11 +67,11 @@
 
                         </Grid>
 
-                    </Menu:Btn>
+                    </utils:Btn>
 
                     <!--// Customer //-->
 
-                    <Menu:Btn Style="{StaticResource BtnStyle}"
+                    <utils:Btn Style="{StaticResource BtnStyle}"
                               Command="{Binding CustomersCommand}">
 
                         <Grid>
@@ -84,11 +84,11 @@
 
                         </Grid>
 
-                    </Menu:Btn>
+                    </utils:Btn>
 
                     <!--// Products //-->
 
-                    <Menu:Btn Style="{StaticResource BtnStyle}"
+                    <utils:Btn Style="{StaticResource BtnStyle}"
                               Command="{Binding ProductsCommand}">
 
                         <Grid>
@@ -101,11 +101,11 @@
 
                         </Grid>
 
-                    </Menu:Btn>
+                    </utils:Btn>
 
                     <!--// Orders //-->
 
-                    <Menu:Btn Style="{StaticResource BtnStyle}"
+                    <utils:Btn Style="{StaticResource BtnStyle}"
                               Command="{Binding OrdersCommand}">
 
                         <Grid>
@@ -118,11 +118,11 @@
 
                         </Grid>
 
-                    </Menu:Btn>
+                    </utils:Btn>
 
                     <!--// Transactions //-->
 
-                    <Menu:Btn Style="{StaticResource BtnStyle}"
+                    <utils:Btn Style="{StaticResource BtnStyle}"
                               Command="{Binding TransactionsCommand}">
 
                         <Grid>
@@ -135,11 +135,11 @@
 
                         </Grid>
 
-                    </Menu:Btn>
+                    </utils:Btn>
 
                     <!--// Shipments //-->
 
-                    <Menu:Btn Style="{StaticResource BtnStyle}"
+                    <utils:Btn Style="{StaticResource BtnStyle}"
                               Command="{Binding ShipmentsCommand}">
 
                         <Grid>
@@ -152,11 +152,11 @@
 
                         </Grid>
 
-                    </Menu:Btn>
+                    </utils:Btn>
 
                     <!--// Settings //-->
 
-                    <Menu:Btn Style="{StaticResource BtnStyle}"
+                    <utils:Btn Style="{StaticResource BtnStyle}"
                               Command="{Binding SettingsCommand}">
 
                         <Grid>
@@ -169,7 +169,7 @@
 
                         </Grid>
 
-                    </Menu:Btn>
+                    </utils:Btn>
 
                 </StackPanel>
 

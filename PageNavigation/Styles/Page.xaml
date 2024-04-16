@@ -29,7 +29,7 @@
                                          From="0"
                                          To="1" />
                         <DoubleAnimation Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.Y)"
-                                         From="50"
+                                         From="-50"
                                          To="0"
                                          Duration="0:0:0.8"
                                          DecelerationRatio="0.6" />
