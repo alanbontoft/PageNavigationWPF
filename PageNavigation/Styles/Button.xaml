@@ -22,7 +22,7 @@
 
                         <Border.Background>
                             <SolidColorBrush x:Name="BorderBackground"
-                                             Color="#272B2F" />
+                                             Color="{StaticResource BackgroundDark}" />
                         </Border.Background>
 
                         <Grid>
@@ -32,7 +32,7 @@
                                     Width="4"
                                     HorizontalAlignment="Left"
                                     VerticalAlignment="Center"
-                                    Background="#FFFFFF"
+                                    Background="{StaticResource ForegroundLightBrush}"
                                     Visibility="Collapsed"
                                     CornerRadius="2" />
 
@@ -60,8 +60,8 @@
                                 <Storyboard>
                                     <ColorAnimation Storyboard.TargetName="BorderBackground"
                                                     Storyboard.TargetProperty="Color"
-                                                    From="#272B2F"
-                                                    To="#3E434A"
+                                                    From="{StaticResource BackgroundDark}"
+                                                    To="{StaticResource BackgroundLight}"
                                                     Duration="0:0:0.3" />
                                 </Storyboard>
                             </BeginStoryboard>
@@ -75,8 +75,8 @@
                                 <Storyboard>
                                     <ColorAnimation Storyboard.TargetName="BorderBackground"
                                                     Storyboard.TargetProperty="Color"
-                                                    From="#3E434A"
-                                                    To="#272B2F"
+                                                    From="{StaticResource BackgroundLight}"
+                                                    To="{StaticResource BackgroundDark}"
                                                     Duration="0:0:0.3" />
                                 </Storyboard>
                             </BeginStoryboard>
