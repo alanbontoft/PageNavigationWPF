@@ -25,7 +25,7 @@
         <Grid>
 
             <TextBlock Text="Payment Amount  :"
-                       Foreground="#DBDBDB"
+                       Foreground="{StaticResource ForegroundMediumBrush}"
                        FontSize="12"
                        HorizontalAlignment="Right"
                        VerticalAlignment="Top"
@@ -33,7 +33,7 @@
                        Margin="0,300,150,0" />
 
             <TextBlock Text="{Binding TransactionAmount, StringFormat='{}{0:C}'}"
-                       Foreground="#CED565"
+                       Foreground="{StaticResource WordYellowBrush}"
                        FontSize="12"
                        HorizontalAlignment="Right"
                        VerticalAlignment="Top"

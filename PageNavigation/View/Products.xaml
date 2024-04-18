@@ -23,7 +23,7 @@
         </Border>
 
         <TextBlock Text="{Binding ProductAvailability}"
-                   Foreground="#F25E68"
+                   Foreground="{StaticResource WordRedBrush}"
                    FontSize="12"
                    HorizontalAlignment="Left"
                    VerticalAlignment="Center"

@@ -22,7 +22,7 @@
             </Border.Background>
         </Border>
 
-        <TextBlock Foreground="#CED565"
+        <TextBlock Foreground="{StaticResource WordYellowBrush}"
                    FontSize="12"
                    TextAlignment="Center"
                    HorizontalAlignment="Right"

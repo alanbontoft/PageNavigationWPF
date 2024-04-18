@@ -25,6 +25,9 @@
     <Color x:Key="ForegroundLight">#ffffff</Color>
     <SolidColorBrush x:Key="ForegroundLightBrush" Color="{StaticResource ForegroundLight}" />
 
+    <Color x:Key="ForegroundMedium">#DBDBDB</Color>
+    <SolidColorBrush x:Key="ForegroundMediumBrush" Color="{StaticResource ForegroundMedium}" />
+
     <Color x:Key="ForegroundDark">#bdbdbd</Color>
     <SolidColorBrush x:Key="ForegroundDarkBrush" Color="{StaticResource ForegroundDark}" />
 
@@ -39,5 +42,8 @@
 
     <Color x:Key="WordGreen">#00c541</Color>
     <SolidColorBrush x:Key="WordGreenBrush" Color="{StaticResource WordGreen}" />
+
+    <Color x:Key="WordYellow">#CED565</Color>
+    <SolidColorBrush x:Key="WordYellowBrush" Color="{StaticResource WordYellow}" />
 
 </ResourceDictionary>

@@ -25,7 +25,7 @@
         <Grid>
 
             <TextBlock Text="DATE  :"
-                       Foreground="#DBDBDB"
+                       Foreground="{StaticResource ForegroundMediumBrush}"
                        FontSize="12"
                        HorizontalAlignment="Right"
                        VerticalAlignment="Top"
@@ -33,7 +33,7 @@
                        Margin="0,145,160,0" />
 
             <TextBlock Text="{Binding DisplayOrderDate}"
-                       Foreground="#CED565"
+                       Foreground="{StaticResource WordYellowBrush}"
                        FontSize="12"
                        HorizontalAlignment="Right"
                        VerticalAlignment="Top"

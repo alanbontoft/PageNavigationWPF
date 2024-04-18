@@ -23,7 +23,7 @@
         </Border>
 
         <TextBlock Text="Customer ID  :"
-                   Foreground="#DBDBDB"
+                   Foreground="{StaticResource ForegroundMediumBrush}"
                    FontSize="12"
                    HorizontalAlignment="Left"
                    VerticalAlignment="Top"
@@ -31,7 +31,7 @@
                    Margin="70,138,0,0" />
 
         <TextBlock Text="{Binding CustomerID}"
-                   Foreground="#CED565"
+                   Foreground="{StaticResource WordYellowBrush}"
                    FontSize="12"
                    HorizontalAlignment="Left"
                    VerticalAlignment="Top"
