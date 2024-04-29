@@ -9,22 +9,22 @@
              d:DesignWidth="622"
              Style="{StaticResource Page_Style}">
 
-    <UserControl.DataContext>
+    <!--<UserControl.DataContext>
         <vm:ShipmentVM />
-    </UserControl.DataContext>
+    </UserControl.DataContext>-->
     
     <Grid Margin="15">
 
         <Border CornerRadius="0,20,20,0">
-            <Border.Background>
+            <!--<Border.Background>
                 <ImageBrush ImageSource="/Images/shipment_page.png"
                             Stretch="None" />
-            </Border.Background>
+            </Border.Background>-->
         </Border>
 
         <Grid>
 
-            <TextBlock Text="Expected Delivery  :"
+            <!--<TextBlock Text="Expected Delivery  :"
                        Foreground="{StaticResource ForegroundMediumBrush}"
                        FontSize="12"
                        HorizontalAlignment="Right"
@@ -38,7 +38,25 @@
                        HorizontalAlignment="Right"
                        VerticalAlignment="Bottom"
                        FontFamily="/Fonts/#Rubik Medium"
-                       Margin="0,0,72,100" />
+                       Margin="0,0,72,100" />-->
+
+            <ItemsControl ItemsSource="{Binding Items}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding Customer}"
+                           Foreground="White"
+                           FontSize="20"
+                           Margin="10 0 20 0"/>
+                            <TextBlock Text="{Binding Value}"
+                           Foreground="White"
+                           FontSize="20"/>
+
+                        </StackPanel>
+                    </DataTemplate>
+
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
 
         </Grid>
         

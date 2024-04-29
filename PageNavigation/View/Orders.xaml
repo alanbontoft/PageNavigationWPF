@@ -16,15 +16,15 @@
     <Grid Margin="15">
 
         <Border CornerRadius="0,20,20,0">
-            <Border.Background>
+            <!--<Border.Background>
                 <ImageBrush ImageSource="/Images/order_page.png"
                             Stretch="None" />
-            </Border.Background>
+            </Border.Background>-->
         </Border>
 
-        <Grid>
+        <StackPanel>
 
-            <TextBlock Text="DATE  :"
+            <!--<TextBlock Text="DATE  :"
                        Foreground="{StaticResource ForegroundMediumBrush}"
                        FontSize="12"
                        HorizontalAlignment="Right"
@@ -38,9 +38,36 @@
                        HorizontalAlignment="Right"
                        VerticalAlignment="Top"
                        FontFamily="/Fonts/#Rubik Medium"
-                       Margin="0,145,90,0" />
+                       Margin="0,145,90,0" />-->
 
-        </Grid>
+            <StackPanel Orientation="Horizontal"
+                        Margin="10">
+                <TextBlock Text="Customer:"
+                            Foreground="White"
+                           FontSize="20"/>
+                <TextBox Text="{Binding Customer}"
+                         Width="100"
+                         Margin="10 0"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal"
+                        Margin="10">
+                <TextBlock Text="Value:"
+                            Foreground="White"
+                           FontSize="20"/>
+                <TextBox Text="{Binding Value}"
+                         Width="100"
+                         Margin="10 0"/>
+            </StackPanel>
+
+            <Button Content="Submit"
+                    Command="{Binding SubmitOrderCommand}"
+                    Height="30"
+                    Width="100"
+                    Margin="20"
+                    HorizontalAlignment="Left"/>
+
+        </StackPanel>
 
     </Grid>
 </UserControl>
